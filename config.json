@@ -1,5 +1,5 @@
 {
     "FakeRelayUrl": "https://fakerelay.gervas.io",
-    "Tags": [ "Tolkien", "tolkiendili", "Pratchett", "GNUTerryPratchett", "SpeakHisName", "Discworld", "Mundodisco", "SciFi", "Cienciaficción", "Cienciaficcion", "Anime", "Manga", "Breizh" ],
-    "Instances": [ "tkz.one", "mastodon.social", "wandering.shop", "mastodon.online" ]
+    "Tags": [ "Tolkien", "tolkiendili", "Pratchett", "GNUTerryPratchett", "SpeakHisName", "Discworld", "Mundodisco", "fantasy", "SciFi", "Cienciaficción", "Cienciaficcion", "Anime", "Manga", "Breizh" ],
+    "Instances": [ "tkz.one", "mastodon.social", "wandering.shop", "mastodon.online", "mastorol.es", "paquita.masto.host" ]
 }
