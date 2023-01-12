@@ -13,6 +13,7 @@
         "fantasy",
         "fantasia",
         "SciFi",
+        "SFF", 
         "CiFi",
         "ScienceFiction",
         "Cienciaficcion",
@@ -29,12 +30,12 @@
         "comics",
         "series",
         "marvelcomics",
-        "disney"
+        "DC", 
+        "starwars"
     ],
     "Instances": [
         "tkz.one",
         "mastodon.social",
-        "mastodon.cloud",
         "mas.to",
         "mastodon.world",
         "wandering.shop",
