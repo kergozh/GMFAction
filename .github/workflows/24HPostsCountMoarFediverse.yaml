@@ -1,0 +1,17 @@
+name: 24HPostsCountMoarFediverse
+
+on:
+
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  PostsCount:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Graphana call
+        run: | 
+          curl -Ss "https://fakerelay.gervas.io/index-posts-count?period=24h" \
+            -H 'Authorization: Bearer ${{ secrets.FAKERELAY_APIKEY }}'
+        shell: bash
