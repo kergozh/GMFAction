@@ -1,9 +1,9 @@
 name: 24HPostsCountMoarFediverse
 
 on:
-
-  schedule:
-    - cron: '0 0 * * *'
+  # uncomment the following 2 lines so that it runs automatically every 15 minutes
+  # schedule:
+  #   - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
