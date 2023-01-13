@@ -7,16 +7,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  moar:
+  status:
     runs-on: ubuntu-latest
     steps: 
-      - name: databricks curl call 
+      - name: Graphana call
         run: | 
-          curl -n -X PATCH "https://adb-WORKSPACEHERE.azuredatabricks.net/api/2.0/repos/REPONUMHERE" \ 
-            -H "Authorization: Bearer TOKENHERE" -d '{"branch": "Development"}' 
-          curl "https://fakerelay.gervas.io/index-posts-count?period=24h" -H 'Authorization: Bearer cLZlPK6nfv3pxMNrVJyVEsdZw7ZwwtPcjg7BPAys2BH7iCpawyf5hdunNmQAGILGhC9JB85bOxQ6m0geqtAJlQ=='
-
-      - uses: g3rv4/GetMoarFediverse@main
-        with:
-          config_file: ${{ github.workspace }}/config.json
-          api_key: ${{ secrets.FAKERELAY_APIKEY }}
+          curl "https://fakerelay.gervas.io/index-posts-count?period=24h" -H 'Authorization: Bearer ${{secrets.FAKERELAY_APIKEY}}'
