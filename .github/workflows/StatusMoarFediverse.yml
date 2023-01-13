@@ -9,7 +9,9 @@ on:
 jobs:
   status:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
+      - uses: actions/checkout@v3
       - name: Graphana call
         run: | 
-          curl "https://fakerelay.gervas.io/index-posts-count?period=24h" -H 'Authorization: Bearer ${{secrets.FAKERELAY_APIKEY}}'
+          curl "https://fakerelay.gervas.io/index-posts-count?period=24h" \
+            -H 'Authorization: Bearer ${{secrets.FAKERELAY_APIKEY}}'
