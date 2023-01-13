@@ -14,4 +14,4 @@ jobs:
         run: | 
           curl "https://fakerelay.gervas.io/index-posts-count?period=24h" \
             -H 'Authorization: Bearer ${{ secrets.FAKERELAY_APIKEY }}'
-
+          shell: bash
