@@ -38,7 +38,10 @@
         "series",
         "marvelcomics",
         "DC", 
-        "starwars"
+        "starwars",
+        "urbanism",
+        "urbanlandscape",
+        "landscape"
     ],
     "Instances": [
         "tkz.one",
