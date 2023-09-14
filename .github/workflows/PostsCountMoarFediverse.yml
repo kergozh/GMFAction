@@ -15,3 +15,5 @@ jobs:
           curl -Ss "https://fakerelay.gervas.io/index-posts-count?period=24h" \
             -H 'Authorization: Bearer ${{ secrets.FAKERELAY_APIKEY }}'
         shell: bash
+      - name: Keep workflow alive
+        uses: gautamkrishnar/keepalive-workflow@v1
