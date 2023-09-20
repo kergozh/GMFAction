@@ -10,6 +10,8 @@ jobs:
   PostsCount:
     runs-on: ubuntu-latest
     steps:
+      - name: Needed for keeping workflow alive
+        uses: actions/checkout@v3
       - name: Graphana call
         run: | 
           curl -Ss "https://fakerelay.gervas.io/index-posts-count?period=24h" \
