@@ -15,5 +15,5 @@ jobs:
         with:
           config_file: ${{ github.workspace }}/config.json
           api_key: ${{ secrets.FAKERELAY_APIKEY }}
-      - name: Keep workflow alivee
-        uses: gautamkrishnar/keepalive-workflow@master
+      - name: Keep workflow alive
+        uses: gautamkrishnar/keepalive-workflow@v1
